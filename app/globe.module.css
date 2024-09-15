@@ -1,0 +1,42 @@
+.todayOrders {
+    background-color: rgb(92, 7, 7);
+  }
+  
+  .yesterdayOrders {
+    background-color: rgb(22, 56, 54);
+  }
+  
+  
+  .thisMonth {
+    background-color: rgb(8, 29, 82);
+  }
+  
+  
+  .lastMonth {
+    background-color: rgb(66, 71, 15);
+  }
+  
+  
+  .allTimeSales {
+    background-color: rgb(129, 7, 86);
+  }
+  
+  .default {
+    background-color: black;
+  }
+  
+  .totalOrders{
+    background-color: orange;
+  }
+  
+  .orderPending{
+    background-color: rgba(9, 106, 233, 0.712);
+  }
+  
+  .orderProcessing{
+    background-color:rgb(128, 0, 6);
+  }
+  
+  .orderDelivered{
+    background-color: green;
+  }

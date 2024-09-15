@@ -1,0 +1,4 @@
+1.  to get icons instal lucide-react using npm instal lucide-react
+add lucide-react inside .eslintrc.json.
+
+chartjs.org to collect charts.....
