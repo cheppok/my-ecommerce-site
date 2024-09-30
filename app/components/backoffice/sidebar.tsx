@@ -22,18 +22,19 @@ export default function Sidebar() {
 
   return (
 
-    <div className=' bg-slate-300 dark:bg-slate-800 space-y-14  w-64 h-screen dark:text-slate-50 text-black fixed  left-0 m-2 overflow-y-scroll'>
-        <Link href="#"> logo</Link>
+    <div className=' bg-slate-300 dark:bg-slate-800 space-y-14  w-64 h-screen dark:text-slate-50 text-black fixed top-0 left-0 m-2 overflow-y-scroll'>
+      <div className='flex  z-10 fixed  left-8 w-full h-12 bg-slate-300 dark:bg-slate-800'><Link href="#" > logo</Link></div>
+        
         <div className='flex flex-col h-full space-y-3 '>
-             <Link href="#"  className='flex space-x-3 border-l-4   border-green-500 p-3 pl-6 '>
+             <Link href="#"  className='flex space-x-3 border-l-4  focus:border-green-500 p-3 pl-6 '>
                 <LayoutGrid/>
-                <span>  Dashboard</span>
+                <span >  Dashboard</span>
               </Link>
-             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 selection: border-green-500'>
+             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 selection:focusborder-green-500'>
                 <Bookmark/>
                 <Collapsible>
                   <CollapsibleTrigger>
-                  <div className='flex space-x-4'>
+                  <div className='flex space-x-4 '>
                     <span> Catalog</span>
                     <ChevronRight/>
                   </div>                
@@ -41,29 +42,29 @@ export default function Sidebar() {
                   <CollapsibleContent>
                     <div className="flex flex-col bg-slate-400 dark:bg-slate-900 p-4 rounded-lg text-xs">
 
-                      <button className='flex flex-row space-x-4 p-1'>
+                      <button className='flex flex-row space-x-4 p-1 hover:text-stone-300'>
                         <Boxes size={15}/>
                         <span> Products</span>
                        
                       </button >
 
-                      <button className='flex flex-row space-x-4 p-1'>
+                      <button className='flex flex-row space-x-4 p-1  hover:text-stone-300 '>
                         <LayoutList size={15 } />
                         <span>Categories</span>
                        
                       </button>
 
-                      <button className='flex flex-row space-x-4 p-1'>
+                      <button className='flex flex-row space-x-4 p-1  hover:text-stone-300'>
                         <SendToBack size={15 } />
                       <span> Attributes</span>
                       </button>
 
-                      <button className='flex flex-row space-x-4 p-1'>
+                      <button className='flex flex-row space-x-4 p-1 hover:text-stone-300'>
                         <ScanSearch size={15 } />
                          <span>Coupon</span>
                       </button>
 
-                      <button className='flex flex-row space-x-4 p-1'>
+                      <button className='flex flex-row space-x-4 p-1  hover:text-stone-300'>
                         <MonitorPlay size={15 } />
                        <span> store slider</span>
                       </button>
@@ -72,38 +73,38 @@ export default function Sidebar() {
                 </Collapsible>
 
               </Link>
-             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 border-green-500'>
+             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 focus:border-green-500'>
                 <Users/>
                 <span> Customers</span>
               </Link>
-             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 border-green-500'>
+             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 focus:border-green-500'>
                 <Warehouse/>
                 <span> Markets</span>
               </Link>
-             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 border-green-500'>
+             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 focus:border-green-500'>
                 <UserCircle/>
                 <span> Farmers</span>
               </Link>
-             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 border-green-500'>
+             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 focus:border-green-500'>
                 <Truck/>
                 <span>  Orders</span>
               </Link>
-             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 border-green-500'>
+             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 focus:border-green-500'>
                 <User/>
                 <span>  Staff</span>
               </Link>
-             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 border-green-500'>
+             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 focus:border-green-500'>
                 <Settings/>
                 <span>  setttings</span>
               </Link>
-             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 border-green-500'>
+             <Link href="#"  className='flex space-x-2 p-3 pl-6 border-l-4 focus:border-green-500'>
                 <ArrowUpRightSquareIcon/>
                 <span>  online stores</span>
               </Link>
            
         </div>
 
-        <div className='bg-green-600 rounded-xl absolute bottom-8 pt-2 pb-2 pl-4 pr-4 ml-6' >
+        <div className='bg-green-600 rounded-xl absolute bottom-0 pt-2 pb-2 pl-4 pr-4 ml-6' >
         <Link href="#" className='flex space-x-2'>
                 <LogOut/>
                 <span> 
