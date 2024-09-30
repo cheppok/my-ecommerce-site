@@ -6,18 +6,18 @@ import DashboardCharts from '../../components/backoffice/dashboardCharts';
 
 
 
+
 export default function Dashboard
 () {
   return (
-    <div>
-        <Heading title='Dashboard Overview'/>
-        <LargeCard/>
-        <Smallcard/>
-        <DashboardCharts/>
-        {/* <RecentOrdersTable/> */}
-       
-
-        
+  
+    <div className=' dark:bg-slate-800 bg-slate-50 pt-4'>
+            <Heading  title='Dashboard Overview' />
+            <LargeCard/>
+            <Smallcard/>
+            <DashboardCharts/>
+            {/* <RecentOrdersTable/> */} 
     </div>
+   
   )
 }

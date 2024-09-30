@@ -67,7 +67,7 @@ export default function LargeCard() {
   };
 
   return (
-    <div className='flex w-full justify-between pt-6'>
+    <div className='flex w-full justify-between p-6'>
       {salestat.map((stat, index) => (
         <div key={index} className= {`${getBackgroundColor(stat.period)} rounded-lg text-white w-52 h-48 flex flex-col items-center p-6 gap-2 shadow-xl`}>
            <Layers/>

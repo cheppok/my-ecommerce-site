@@ -61,8 +61,8 @@ export default function CustomeTable() {
   const paginationButtons = getPaginationButtons();
 
   return (
-    <div>
-      <h2>Recent Orders</h2>
+    <div className='mt-10 p-4 bg-slate-700 rounded-lg'>
+      <h2 className='text-xl p-4'>Recent Orders</h2>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -101,7 +101,7 @@ export default function CustomeTable() {
           </tbody>
         </table>
         <nav className="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4" aria-label="Table navigation">
-          <span className="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span className="font-semibold text-gray-300 dark:text-white">({startIndex + 1}-{Math.min(endIndex, data.length)})</span> of <span className="font-semibold text-gray-300 dark:text-white">{data.length}</span></span>
+          <span className="text-sm font-normal text-gray-300  mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span className="font-semibold text-gray-300">({startIndex + 1}-{Math.min(endIndex, data.length)})</span> of <span className="font-semibold text-gray-300 ">{data.length}</span></span>
           <ul className="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
             <button onClick={() => setCurrentPage(currentPage - 1)}
               disabled={currentPage === 1}

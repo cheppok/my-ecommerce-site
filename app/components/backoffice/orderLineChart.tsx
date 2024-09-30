@@ -39,7 +39,7 @@ const options = {
     x: {
       beginAtZero: true,
       ticks: {
-        color: 'white', // Change the text color of the x-axis labels
+        color: 'rgba(9, 106, 233, 0.9)', // Change the text color of the x-axis labels
         font: {
           size: 12, // Reduce the font size of the x-axis labels
           // lineHeight: 4
@@ -49,7 +49,7 @@ const options = {
     y: {
       beginAtZero: true,
       ticks: {
-        color: 'white', // Change the text color of the y-axis labels
+        color: 'rgba(9, 106, 233, 0.9)', // Change the text color of the y-axis labels
         font: {
           size: 12, // Reduce the font size of the y-axis labels
           // lineHeight:2

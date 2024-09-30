@@ -1,7 +1,11 @@
 import React from 'react'
 import { Menu, Sun, Bell, User, LogOut, Settings, X } from 'lucide-react';
 import Image from 'next/image';
-import Dashboard from '../../(back-office)/dashboard/page';
+import { ModeToggle } from './darkmode/themeSwitcher';
+
+
+
+
 
 import {
   DropdownMenu,
@@ -31,27 +35,25 @@ const sun = () => {
 
 
 
-export default function Navebar() {
+export default function Navbar() {
+
   return (
-        <div className=' navbar flex items-center justify-between bg-slate-700 h-20 text-stone-100 p-4 fixed top-0  ml-60'>
+
+
+        <div className=' navbar flex items-center justify-between h-20 bg-slate-300 dark:bg-slate-900 dark:text-stone-50 text-slate-900 p-4 fixed top-0 z-20'>
           <button> <Menu/> </button>
             <div className="flex p-4 space-x-4" >
-
-              <button > 
-                <Sun className = "text-green-400 fill-green-400"/>
+           
+                <button>
+                  <ModeToggle/>
                 </button>
-              
-                {/* <button type="button" className="relative inline-flex items-center p-3 text-sm font-medium text-center text-white  rounded-lg">
-                <Bell className="text-green-400 fill-green-400" />
-                  <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500  rounded-full -top-1 -start-0 ">20</div>
-                </button> */}
 
 
                 <button>
                  
                        <DropdownMenu>
                         <DropdownMenuTrigger>
-                        <Bell className="text-green-400 fill-green-400" />
+                        <Bell className="dark:text-green-400 text-black dark:fill-green-400 fill-black  " />
                         </DropdownMenuTrigger>
 
                         <DropdownMenuContent>
@@ -282,6 +284,8 @@ export default function Navebar() {
 
               </div>
         </div>
+
+         
   )
 }
 

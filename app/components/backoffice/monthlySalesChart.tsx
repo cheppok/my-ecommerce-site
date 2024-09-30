@@ -33,8 +33,8 @@ export default function MonthlySalesChart() {
   };
 
   return (
-    <div className='bg-slate-700 pt-8 px-4 rounded-lg '>Monthly Sales
-      <div className="text-xl font-medium text-center border-b-2 border-gray-400 dark:text-gray-400 dark:border-gray-700">
+    <div className=' bg-slate-200 dark:bg-slate-700 rounded-lg pt-4 text-xl text-slate-900 dark:text-slate-300'>Monthly Sales
+      <div className="text-xl font-medium text-center border-b-2 border-gray-400 dark:text-gray-200 dark:border-gray-700">
         <ul className="flex flex-wrap -mb-px">
           {tabs.map((tab) => (
             <li key={tab.type} className="me-2">

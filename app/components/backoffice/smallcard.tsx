@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {ShoppingCart} from 'lucide-react'
+
 import styles from "../../globe.module.css"
 
 
@@ -61,16 +61,17 @@ const Smallcard: React.FC = () => {
     }
   };
   return (
-    <div className='flex justify-between w-full gap-2 pt-8 pb-8 '>
+    
+    <div className='flex justify-between w-full gap-2 pt-8 pb-8 pl-6 pr-6'>
       {smallCard.map((stat, index) => (
-       <div key={index} className='bg-slate-800 h-32 w-72 flex items-center justify-center mt-6 gap-6 rounded-2xl shadow-md'>
-         <div className={`${backgrondColor(stat.title)} h-10 w-10 rounded-full flex items-center justify-center`}>
+       <div key={index} className='bg-slate-300 dark:bg-slate-700 h-32 w-72 flex items-center justify-center mt-6 gap-6 rounded-2xl shadow-md'>
+         <div className={`${backgrondColor(stat.title)} h-10 w-10 rounded-full flex items-center justify-center `}>
          <img src={stat.url} className="h-6 w-6"></img> 
          </div>
           
           <div>
-             <h2>{stat.title}</h2>
-             <h2 className='text-2xl font-bold'>{stat.number}</h2>
+             <h2 className='text-slate-900 dark:text-slate-300'>{stat.title}</h2>
+             <h2 className='text-2xl font-bold text-slate-900 dark:text-slate-300'>{stat.number}</h2>
            </div>
         </div>
       ))}
